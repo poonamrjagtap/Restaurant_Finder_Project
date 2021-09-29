@@ -19,12 +19,8 @@ public class  Restaurant {
         this.closingTime = closingTime;
     }
 
-    public Restaurant() {
-
-    }
-
-
-    public boolean isRestaurantOpen() {
+  
+ public boolean isRestaurantOpen() {
 
 
         if (getCurrentTime().isAfter(openingTime) && getCurrentTime().isBefore(closingTime)){
@@ -40,7 +36,7 @@ public class  Restaurant {
         return Collections
                 .unmodifiableList(menu);
 
-        //DELETE ABOVE RETURN STATEMENT AND WRITE CODE HERE
+        
     }
 
     private Item findItemByName(String itemName){
@@ -76,15 +72,13 @@ public class  Restaurant {
     public String getName() {
         return name;
     }
-
-    public int getTotalOrderAmount (List<String> selectedItems){
+     public int getTotalOrderAmount (List<String> selectedItems){
         int totalAmount = 0;
         for(String selectedItem : selectedItems) {
             totalAmount += findItemByName(selectedItem).getPrice();
         }
         return  totalAmount;
     }
-
 
 
 }

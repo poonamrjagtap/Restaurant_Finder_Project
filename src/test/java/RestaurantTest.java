@@ -70,6 +70,7 @@ class RestaurantTest {
                 ()->restaurant.removeFromMenu("French fries"));
     }
     //<<<<<<<<<<<<<<<<<<<<<<<MENU>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
     @Test
     public void get_total_order_should_be_equal_to_addition_of_price_from_ordered_menu(){
         List<String> item_name=new ArrayList<>();
