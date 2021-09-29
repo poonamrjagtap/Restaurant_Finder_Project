@@ -27,7 +27,7 @@ class RestaurantTest {
         restaurant.addToMenu("Vegetable lasagne", 269);
 
     }
-
+//Refactor the code
     //>>>>>>>>>>>>>>>>>>>>>>>>>OPEN/CLOSED<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
     //-------FOR THE 2 TESTS BELOW, YOU MAY USE THE CONCEPT OF MOCKING, IF YOU RUN INTO ANY TROUBLE
     @Test
